@@ -4,8 +4,8 @@ import styles from './lpLancement.module.css'
 
 function LpLancement() {
     return ( <div className={styles.container}>
-        <Welcome isLandingPage/>
-        <Presentation isLandingPage/>
+        {/*<Welcome isLandingPage/>
+        <Presentation isLandingPage/>*/}
     </div> );
 }
 
