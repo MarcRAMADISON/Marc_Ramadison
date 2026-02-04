@@ -39,7 +39,7 @@
  }
 
  .item:hover{
-  color: #00214d
+  color: #555
  }
 
  .mobileContainer{
@@ -65,7 +65,7 @@
   .burger span {
     display: block;
     height: 4px;
-    background: #8C52FF;
+    background: #ff914d;
     border-radius: 2px;
     transition: all 0.3s ease;
   }
@@ -117,8 +117,8 @@
     background: rgba(56, 182, 255, 1);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: fixed;
-    bottom: 50px;
-    right: 13%;
+    bottom: 30px;
+    right: 20%;
     transform: translateX(50%);
     z-index: 999;
     border-radius: 20px;
@@ -131,7 +131,7 @@
   .newsletterTitle{
     color:#fff;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
   }
   .inputField{
     background-color: #fff;

@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
-function MenuBar({redirect}) {
+function MenuBar({redirect,isMain=false}) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [email,setEmail]= useState("")
@@ -60,11 +60,11 @@ function MenuBar({redirect}) {
 
   return (
     <>
-      <div className={styles.newsletterContainer} style={{opacity: isScrolled ? 1 : 0, bottom:isScrolled ? '' : '-80px'}}>
+      {isMain? <div className={styles.newsletterContainer} style={{opacity: isScrolled ? 1 : 0, bottom:isScrolled ? '' : '-80px'}}>
         <h3 className={styles.newsletterTitle}>
           Inscrivez vous à ma newsletter et je vais construire votre{" "}
-          <span style={{ color: "#00214d" }}>
-            identité visuelle gratuitement
+          <span style={{ color: "#00214d", fontWeight: 500 }}>
+            logo gratuitement
           </span>
         </h3>
         <div style={{ display: "flex", alignItems: "center" }}>
@@ -83,7 +83,7 @@ function MenuBar({redirect}) {
             onClick={handleSend}
           />
         </div>
-      </div>
+      </div> : <></>}
       <div
         className={styles.mobileContainer}
         style={{ backgroundColor: isScrolled ? "#fff" : "transparent" }}

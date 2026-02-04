@@ -26,7 +26,6 @@ function Offres() {
   const handleClick = (e, offre) => {
     e.preventDefault();
     setOpenModal(true);
-    console.log("offre ******* ", offre);
     setCurrentOffre(offre);
   };
   const handleSend = () => {
@@ -104,11 +103,10 @@ function Offres() {
       <div className={styles.container} id="offres">
         <h1 className={styles.title}>Mes offres</h1>
         <h3 className={styles.subTitle}>
-          Je lance des packs sur-mesure pour les entrepreneurs, thérapeutes,
-          restaurateurs, coachs, et tout professionnel souhaitant gagner en
+          Je lance des <span style={{fontWeight:'bold'}}>packs sur-mesure pour les TPE / PME</span>, et tout professionnel souhaitant gagner en
           visibilité, en crédibilité et en clients. Profitez de cette offre
-          limitée pour poser les bases d’une communication puissante… sans
-          exploser votre budget.
+          limitée pour poser les bases d’une communication puissante… <span style={{fontWeight:'bold'}}>sans
+          exploser votre budget.</span>
         </h3>
         <div className={styles.cardContainer}>
           {offres.map((offre, index) => {

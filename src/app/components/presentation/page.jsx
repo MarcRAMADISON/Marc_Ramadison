@@ -48,29 +48,39 @@ function Presentation({ isLandingPage = false }) {
           </div>
         </Animation>
       ) : (
-        <Animation className={styles.imageContainer} animation="fadeInRight">
-          <Image
-            src="/assets/team_illustration.png"
-            alt="team illustration"
-            layout="fill"
-            objectFit="contain"
-            objectPosition="90% 0%"
-          />
+        <Animation animation="fadeInRight">
+          <div className={styles.imageContainer}>
+            <Image
+              src="/assets/team_illustration.png"
+              alt="team illustration"
+              layout="fill"
+              objectFit="contain"
+              objectPosition="90% 0%"
+            />
+          </div>
+          <div style={{display:'flex',flexDirection:'column',alignItems:'center',marginTop:'15px'}}>
+            <h2 className={styles.titleAvis}></h2>
+            <div></div>
+          </div>
         </Animation>
       )}
       <Animation className={styles.textContainer} animation="fadeInLeft">
-        <h1 className={styles.title}> A propos de <span style={{color:"#ff914d"}}>Marc RAMADISON</span></h1>
+        <h1 className={styles.title}>
+          {" "}
+          A propos de <span style={{ color: "#ff914d" }}>Marc RAMADISON</span>
+        </h1>
         <h2 className={styles.subTitle}>
-        Expert en développement web depuis plus de quatre (4) ans d'expérience professionnelle.
+          Expert en développement web depuis plus de quatre (4) ans d'expérience
+          professionnelle.
           <span style={{ fontWeight: "bold" }}>
             👉 Je transforme votre présence digitale en véritable machine à
             vendre
           </span>
-          , grâce à des sites web performants et optimisés SEO, une communication stratégique et des
-          actions marketing ciblées. Ma mission : bâtir une image forte,
-          authentique et rentable pour votre marque. De la conception à la
-          conversion, nous vous accompagnons de A à Z. Objectif : visibilité,
-          impact et résultats concrets.
+          , grâce à des sites web performants et optimisés SEO, une
+          communication stratégique et des actions marketing ciblées. Ma mission
+          : bâtir une image forte, authentique et rentable pour votre marque. De
+          la conception à la conversion, nous vous accompagnons de A à Z.
+          Objectif : visibilité, impact et résultats concrets.
         </h2>
         <div className={styles.containerSlogan}>
           <div style={{ display: "flex", flexDirection: "column" }}>

@@ -11,7 +11,7 @@ export default function Welcome({ isLandingPage=false }) {
   const [openModal, setOpenModal] = useState(false);
 
   return isLandingPage ? (
-    <div key="1" className={styles.container} style={{minHeight: '700px',height: '70vh'}}>
+    <div key="1" className={styles.container} style={{minHeight: '700px',height: '65vh'}}>
       <Animation className={styles.block1} style={{marginBottom:"13vh"}} animation="fadeInRight">
         <h1 className={styles.title}>
           L’innovation digitale au service de votre succès.
@@ -90,10 +90,7 @@ export default function Welcome({ isLandingPage=false }) {
                   className={styles.play}
                   onClick={() => setOpenModal(true)}
                 />
-                <h3 className={styles.slogan}>
-                  {" "}
-                  Innovation , Engagement , Performance
-                </h3>
+                
               </div>
               <h2
                 className={styles.subTitle}
@@ -112,16 +109,6 @@ export default function Welcome({ isLandingPage=false }) {
                 objectPosition="100% 100%"
               />
             </Animation>
-          </div>,
-          <div key="2" className={styles.containerVideo}>
-            <video
-              src="/assets/presentation_webillion.mp4"
-              controls
-              autoPlay
-              muted
-              loop
-              style={{ width: "100%", borderRadius: "10px" }}
-            />
           </div>,
         ]}
       </Carousel>

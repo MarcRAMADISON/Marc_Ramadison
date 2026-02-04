@@ -163,28 +163,7 @@ function Contact() {
         </div>
         <div style={{ display: "flex", marginTop: "60px" }}>
           <Image
-            src="/assets/facebook.png"
-            width={40}
-            height={40}
-            alt="call icon"
-            style={{ marginRight: "40px" }}
-          />
-          <Image
-            src="/assets/instagram.png"
-            width={40}
-            height={40}
-            alt="call icon"
-            style={{ marginRight: "40px" }}
-          />
-          <Image
             src="/assets/linkedin.png"
-            width={40}
-            height={40}
-            alt="call icon"
-            style={{ marginRight: "40px" }}
-          />
-          <Image
-            src="/assets/tiktok.png"
             width={40}
             height={40}
             alt="call icon"

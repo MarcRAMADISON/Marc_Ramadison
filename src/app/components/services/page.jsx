@@ -19,7 +19,7 @@ function Services() {
     } else if(type === "ADS"){
       router.push('/offreADS')
     } else{
-      //router.push('/offreIA')  TO_DO
+      router.push('/offreIA')
     }
   }
   return (

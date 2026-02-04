@@ -9,7 +9,7 @@ import Contact from "./components/contact/page";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <MenuBar />
+      <MenuBar isMain={true} />
       <Welcome />
       <Presentation />
       <Services/>

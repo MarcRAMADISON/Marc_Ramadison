@@ -2,9 +2,9 @@
   background-image: url('/assets/welcome_bg.jpg');
   width: 100vw;
   min-height: 900px;
-  height: 95vh;
+  height: 93vh;
   max-height: 1080px;
-  max-height: 1080px;
+  max-height: 720px;
   max-width: 1920px;
    place-self: center;
   display: grid;
@@ -128,7 +128,8 @@
   .container {
     height:fit-content;
     grid-template-columns: 100%;
-    padding:150px 0px 50px 0px
+    padding:150px 0px 50px 0px;
+    max-height:150px !important
   }
   .title{
     font-size: 1.5rem;
